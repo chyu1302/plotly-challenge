@@ -54,7 +54,16 @@ Plotly.newPlot("bubble",bubbleData, bubbleLayout);
 
     // HINT: You will need to use slice() to grab the top 10 sample_values,
     // otu_ids, and labels (10 each).
+    var data = [{
+      values: size_value.splice(0, 10),
+      labels: x_value.splice(0, 10),
+      text: y_value.splice(0,10),
+      type: 'pie'
+    }];
+    Plotly.newPlot('pie', data);
+  });
 }
+
 
 function init() {
   // Grab a reference to the dropdown select element
