@@ -1,1 +1,1 @@
-web: gunicorn app:floating-retreat-88439
+web: gunicorn app:app
